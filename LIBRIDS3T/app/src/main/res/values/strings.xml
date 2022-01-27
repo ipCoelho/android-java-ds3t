@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LIBRI-DS3T</string>
+    <string name="cadastro_usuario_titulo">cadastro de usuario</string>
+    <string name="txt_nome">NOME</string>
+    <string name="txt_sobrenome">SOBRENOME</string>
+    <string name="txt_email">E-MAIL</string>
+    <string name="txt_login">LOGIN</string>
+    <string name="cadastrar_usuario">CADASTRAR</string>
+    <string name="txt_senha">SENHA</string>
+</resources>
