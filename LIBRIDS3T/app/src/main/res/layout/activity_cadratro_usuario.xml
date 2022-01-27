@@ -9,7 +9,7 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadratroUsuario"
+    tools:context=".CadastroUsuario"
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center">
@@ -22,30 +22,35 @@
         android:text="@string/cadastro_usuario_titulo"/>
 
     <EditText
+        android:id="@+id/txtNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/txt_nome"
         style="@style/editTextForm"
         android:inputType="text"/>
     <EditText
+        android:id="@+id/txtSobrenome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/txt_sobrenome"
         style="@style/editTextForm"
         android:inputType="text"/>
     <EditText
+        android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/txt_email"
         style="@style/editTextForm"
         android:inputType="textEmailAddress"/>
     <EditText
+        android:id="@+id/txtLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/txt_login"
         style="@style/editTextForm"
         android:inputType="text"/>
     <EditText
+        android:id="@+id/txtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/txt_senha"
@@ -53,6 +58,7 @@
         android:inputType="textPassword"/>
 
     <Button
+        android:id="@+id/btnCadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/cadastrar_usuario"
