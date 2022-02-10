@@ -60,7 +60,7 @@
         android:hint="@string/txtSenha"
         style="@style/editTextForm"
         android:inputType="textPassword"/>
-"s
+
     <Button
         android:id="@+id/btnCadastrarUsuario"
         android:layout_width="match_parent"

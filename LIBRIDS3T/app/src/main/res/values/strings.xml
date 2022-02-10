@@ -13,4 +13,15 @@
     <string name="cancelar">CANCELAR</string>
     <string name="cadastro_ok">CADASTRO EFETUADO COM SUCESSO!</string>
     <string name="cadastro_erro">ERRO AO CADASTRAR!</string>
+
+    <!--    R.strings da activity_cadastro_livro.xml -->
+    <string name="cadastroLivroTitulo">CADASTRO DE LIVROS</string>
+    <string name="txtTitulo">TÍTULO</string>
+    <string name="txtDescricao">DESCRIÇÃO</string>
+    <string name="txtFoto">FOTO</string>
+    <string name="titulo_cadastro_livro">CADASTRO DE LIVROS</string>
+    <string name="mensagem_cadastro_livro">VOCÊ ESTÁ CADASTRANDO UM LIVRO NO APP LIBRE!</string>
+    <string name="txtUsuario">LOGIN</string>
+    <string name="entrarLogin">ENTRAR</string>
+    <string name="cadastrarLogin">CADASTRAR-SE</string>
 </resources>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,41 +10,47 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
+        tools:context=".CadastroLivro"
         android:orientation="vertical"
         android:layout_gravity="center"
         android:gravity="center">
 
-        <EditText
-            android:id="@+id/txtUsuario"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txtUsuario"
+            android:text="@string/cadastroLivroTitulo"
+            style="@style/textTitle"/>
+
+        <EditText
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtTitulo"
             style="@style/editTextForm"
             android:inputType="text"/>
 
         <EditText
-            android:id="@+id/txtSenhaLogin"
+            android:id="@+id/txtDescricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txtSenha"
+            android:hint="@string/txtDescricao"
             style="@style/editTextForm"
-            android:inputType="textPassword"/>
+            android:inputType="text"/>
 
-        <Button
-            android:id="@+id/btnEntrarLogin"
+        <EditText
+            android:id="@+id/txtFoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/entrarLogin"
-            style="@style/buttonForm"/>
+            android:hint="@string/txtFoto"
+            style="@style/editTextForm"
+            android:inputType="text"/>
 
         <Button
-            android:id="@+id/btnCadastrarLogin"
+            android:id="@+id/btnCadastrarLivro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cadastrarLogin"
+            android:text="@string/cadastrarUsuario"
             style="@style/buttonForm"/>
-
 
     </LinearLayout>
 

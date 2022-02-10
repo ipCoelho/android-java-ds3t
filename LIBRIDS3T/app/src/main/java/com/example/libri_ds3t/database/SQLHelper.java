@@ -12,7 +12,7 @@ public class SQLHelper extends SQLiteOpenHelper
 {
     /** ATRIBUTOS DE CONEXÃO E CRIAÇÃO DO BANCO DE DADOS **/
     private static final String DB_NAME = "libri";
-    private static final int DB_VERSION = 1;
+    private static final int DB_VERSION = 2;
     private static SQLHelper INSTANCE;
 
     /** MÉTODO DE RECUPERAÇÃO DA CONEXÃO COM O SQLITE **/
@@ -41,9 +41,18 @@ public class SQLHelper extends SQLiteOpenHelper
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {}//FIM DO MÉTODO onUpgrade
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+        sqLiteDatabase.execSQL("CREATE TABLE tbl_livro(" +
+                "cod_livro INTEGER PRIMARY KEY," +
+                "cod_usuario INTEGER," +
+                "titulo TEXT," +
+                "descricao TEXT," +
+                "foto TEXT," +
+                "created_date DATETIME," +
+                "FOREIGN KEY (cod_usuario) REFERENCES tbl_usuario(cod_usuario))");
+    }//FIM DO MÉTODO onUpgrade
 
-    /** CRIAÇÃ DO MÉTODO DE INSERÇÃO DE DADOS DE USUÁRIO**/
+    /** CRIAÇÃO DO MÉTODO DE INSERÇÃO DE DADOS DE USUÁRIO**/
     public boolean addUser(String nome, String sobrenome, String email,
                            String login, String senha, String created_data){
 
@@ -83,8 +92,35 @@ public class SQLHelper extends SQLiteOpenHelper
 
         }
 
-    }
+    }//FIM DO MÉTODO ADDUSER
 
+    /** CRIAÇÃO DO MÉTODO DE INSERÇÃO DE LIVROS**/
+    public boolean addBook(int cod_usuario, String titulo, String descricao, String foto, String created_data) {
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+
+        try {
+            sqLiteDatabase.beginTransaction();
+            ContentValues values = new ContentValues();
+
+            values.put("cod_usuario", cod_usuario);
+            values.put("titulo", titulo);
+            values.put("descricao", descricao);
+            values.put("foto", foto);
+            values.put("created_date", created_data);
+
+            sqLiteDatabase.insertOrThrow("tbl_livro",null, values);
+            sqLiteDatabase.setTransactionSuccessful();
+
+            return true;
+        }
+        catch (Exception error) {
+            Log.d("SQLERRO", error.getMessage());
+            return false;
+        }
+        finally {
+            if(sqLiteDatabase.isOpen()) sqLiteDatabase.endTransaction();
+        }
+    }//FIM DO MÉTODO ADDUSER
 }//FIM DA CLASSE SQLHelper
 
 
