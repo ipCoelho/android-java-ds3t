@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LIBRIDS3T">
 <!--        <activity-->
-<!--            android:name=".CadratroUsuario"-->
+<!--            android:name=".CadastroUsuario"-->
 <!--            android:exported="false" />-->
         <activity
             android:name=".CadastroUsuario"

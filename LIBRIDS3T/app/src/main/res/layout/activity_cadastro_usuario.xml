@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,56 +15,59 @@
     android:layout_gravity="center"
     android:gravity="center">
 
-
     <TextView
-        style="@style/textTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cadastro_usuario_titulo"/>
+        android:text="@string/cadastroUsuarioTitulo"
+        style="@style/textTitle"/>
 
     <EditText
         android:id="@+id/txtNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/txt_nome"
+        android:hint="@string/txtNome"
         style="@style/editTextForm"
         android:inputType="text"/>
+
     <EditText
-        android:id="@+id/txtSobrenome"
+        android:id="@+id/txtSobreNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/txt_sobrenome"
+        android:hint="@string/txtSobreNome"
         style="@style/editTextForm"
         android:inputType="text"/>
+
     <EditText
         android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/txt_email"
+        android:hint="@string/txtEmail"
         style="@style/editTextForm"
         android:inputType="textEmailAddress"/>
+
     <EditText
         android:id="@+id/txtLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/txt_login"
+        android:hint="@string/txtLogin"
         style="@style/editTextForm"
         android:inputType="text"/>
+
     <EditText
         android:id="@+id/txtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/txt_senha"
+        android:hint="@string/txtSenha"
         style="@style/editTextForm"
         android:inputType="textPassword"/>
-
+"s
     <Button
-        android:id="@+id/btnCadastrar"
+        android:id="@+id/btnCadastrarUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cadastrar_usuario"
-        style="@style/buttomForm"/>
-
+        android:text="@string/cadastrarUsuario"
+        style="@style/buttonForm"/>
 
 </LinearLayout>
+
 </ScrollView>
