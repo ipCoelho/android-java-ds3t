@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LIBRIDS3T">
-        <!-- <activity -->
-        <!-- android:name=".CadastroLivro" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".CadastroUsuario" -->
-        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".FeedLivro"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroLivro"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroUsuario"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -44,7 +44,6 @@
             android:text="@string/cadastrarLogin"
             style="@style/buttonForm"/>
 
-
     </LinearLayout>
 
 </ScrollView>
