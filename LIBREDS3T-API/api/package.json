@@ -10,10 +10,21 @@
     "type": "git",
     "url": "git+https://github.com/ipCoelho/api-for-libre.git"
   },
+  "keywords": [
+    "API",
+    "ANDROID",
+    "KOTLIN",
+    "MOBILE-DEVELOPMENT"
+  ],
   "author": "Israel P. Coelho",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ipCoelho/api-for-libre/issues"
   },
-  "homepage": "https://github.com/ipCoelho/api-for-libre#readme"
+  "homepage": "https://github.com/ipCoelho/api-for-libre#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  }
 }
