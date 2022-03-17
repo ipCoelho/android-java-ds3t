@@ -1,0 +1,19 @@
+{
+  "name": "api-for-libre",
+  "version": "1.0.0",
+  "description": "API designed for sending and storagging data for an Android/Kotlin Project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipCoelho/api-for-libre.git"
+  },
+  "author": "Israel P. Coelho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipCoelho/api-for-libre/issues"
+  },
+  "homepage": "https://github.com/ipCoelho/api-for-libre#readme"
+}
